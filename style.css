@@ -171,7 +171,9 @@ h2{
   margin-bottom: 0.875rem;
 }
 .menu{
-  margin-bottom: 2rem;
+  margin-bottom: 2rem !important;
+  max-width: 25rem;
+  margin: 0 auto;
 }
 .btn-container{
   margin: 0 0 4rem 0;
@@ -194,6 +196,22 @@ h4{
   padding-top: 1rem;
 }
 
+@media screen and (min-width: 768px) {
+  .section-center{
+    display: grid;
+    place-items: center;
+  }
+  .menu{
+    display: grid;
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+    margin-bottom: 2rem;
+  }
+  .img {
+    height: 175px;
+  }
+}
 
 @media screen and (min-width: 1200px){
   .section-center{
@@ -208,7 +226,7 @@ h4{
     grid-template-columns: 225px 1fr ;
     max-width: 40rem;
     gap: 0 1.25rem;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
   }
   
   .img{
